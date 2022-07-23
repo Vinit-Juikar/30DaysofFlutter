@@ -12,7 +12,12 @@ class Homepage extends StatelessWidget {
       ),
       body: Center(
         child: Container(
-          child: Text("Welcome to $days days of $name"),
+          child: Text(
+            "Welcome to $days days of $name",
+            style: TextStyle(
+                fontSize: 40, color: Colors.red, fontWeight: FontWeight.bold),
+            textScaleFactor: 2.0,
+          ),
         ),
       ),
       drawer: Drawer(),
