@@ -19,6 +19,7 @@ class _LoginPageState extends State<LoginPage> {
   bool changeButton = false;
 
   // const login_page({Key? key}) : super(key: key);
+  // ignore: unused_field
   final _formKey = GlobalKey<FormState>();
 
 
@@ -31,6 +32,7 @@ class _LoginPageState extends State<LoginPage> {
 
       await Future.delayed(Duration(seconds: 1));
 
+      // ignore: use_build_context_synchronously
       await Navigator.pushNamed(context, MyRoutes.homeRoute);
       setState(() {
         changeButton = false;

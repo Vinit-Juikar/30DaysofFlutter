@@ -2,6 +2,8 @@
 
 import 'package:flutter/material.dart';
 
+import '../widgets/drawer.dart';
+
 final int days = 30;
 final String name = "Vinit";
 
@@ -22,7 +24,7 @@ class Homepage extends StatelessWidget {
           ),
         ),
       ),
-      drawer: Drawer(),
+      drawer: MyDrawer(),
     );
   }
 }

@@ -25,6 +25,7 @@ class MyApp extends StatelessWidget {
       ), // used to decide the theme of the font that we are using
       debugShowCheckedModeBanner: false,
       darkTheme: ThemeData(brightness: Brightness.dark),
+      initialRoute: MyRoutes.homeRoute,
       routes: {
         "/": (context) => LoginPage(),
         MyRoutes.homeRoute: (context) => Homepage(), 
